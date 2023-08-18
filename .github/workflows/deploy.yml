@@ -19,9 +19,10 @@ jobs:
           node-version: 14  # Adjust to your preferred Node.js version
       - name: Navigate to frontend folder
         run: cd frontend
+
       - name: Install dependencies
         run: npm install
-
+        
       - name: Build
         run: npm run build
 
