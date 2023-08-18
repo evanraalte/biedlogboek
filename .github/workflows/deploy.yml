@@ -4,11 +4,11 @@ on:
   push:
     branches:
       - main  # Adjust to your main branch name
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v2  
